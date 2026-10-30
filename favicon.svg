@@ -1,6 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#0b1220"/>
-  <rect x="7" y="16" width="4" height="9" rx="1" fill="#22c55e" opacity=".55"/>
-  <rect x="14" y="11" width="4" height="14" rx="1" fill="#22c55e" opacity=".8"/>
-  <rect x="21" y="6" width="4" height="19" rx="1" fill="#22c55e"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3dff6a"/>
+      <stop offset="1" stop-color="#00b52c"/>
+    </linearGradient>
+    <linearGradient id="s" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#b9bec4"/>
+    </linearGradient>
+  </defs>
+  <g transform="skewX(-6) translate(6 0)">
+    <path fill="url(#g)" fill-rule="evenodd" d="M16 6H48A19 19 0 0 1 48 44H33V64H16Z M33 20H46A5 5 0 0 1 46 30H33Z"/>
+    <path fill="url(#g)" fill-rule="evenodd" stroke="#0d0d0d" stroke-width="3" d="M42 34H74A19 19 0 0 1 74 72H59V95H42Z M59 48H72A5 5 0 0 1 72 58H59Z"/>
+  </g>
+  <polyline points="6,88 30,58 41,72 66,34" fill="none" stroke="#0d0d0d" stroke-width="11" stroke-linejoin="miter" stroke-linecap="round"/>
+  <polygon points="74,22 72.5,40 58.5,30.5" fill="#0d0d0d" stroke="#0d0d0d" stroke-width="5" stroke-linejoin="round"/>
+  <polyline points="6,88 30,58 41,72 66,34" fill="none" stroke="url(#s)" stroke-width="6" stroke-linejoin="miter" stroke-linecap="round"/>
+  <polygon points="74,22 72.5,40 58.5,30.5" fill="url(#s)"/>
 </svg>
