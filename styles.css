@@ -297,3 +297,7 @@ p { margin: 0 0 1em; }
 .story h3 { font-size: 1.05rem; margin: .35rem 0 .4rem; }
 .story p { color: var(--muted); font-size: .9rem; margin: 0; font-style: italic; }
 .stories__more { text-align: center; margin-top: 2rem; }
+.join-card .checks--sm { margin: 0 0 1.25rem; flex: 1; }
+.join-card .checks--sm li { font-size: .88rem; color: var(--muted); padding: .3rem 0 .3rem 1.5rem; }
+.join-card .checks--sm li::before { top: .62rem; }
+.join-card:has(.checks--sm) p { flex: 0; }
