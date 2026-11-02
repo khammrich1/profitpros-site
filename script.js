@@ -37,3 +37,16 @@ videos.forEach((v) => {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Member stories: show all
+const storiesToggle = document.getElementById("stories-toggle");
+if (storiesToggle) {
+  const stories = document.querySelector(".stories");
+  const label = storiesToggle.textContent;
+  storiesToggle.addEventListener("click", () => {
+    const open = stories.classList.toggle("is-expanded");
+    storiesToggle.setAttribute("aria-expanded", String(open));
+    storiesToggle.textContent = open ? "Show fewer" : label;
+    if (!open) document.getElementById("members").scrollIntoView();
+  });
+}
